@@ -1,0 +1,24 @@
+﻿@page
+@model Homework2.Pages.Index1Model
+
+@{
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model.PersonList)
+        {
+            <tr>
+                <td> @person.Name</td>
+                <td> @person.Mobile</td>
+                <td> @person.Address</td>
+            </tr>
+        }
+    </tbody>
+</table>
